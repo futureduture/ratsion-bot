@@ -9,7 +9,8 @@ from utils.menu_utils import (
 )
 from generate_week_menu import generate_week_menu
 
-TOKEN = "7512547936:AAEOHuGm2FnvBDyAyfC7w5NLRpQoQkAUa44"
+import os
+TOKEN = os.getenv("TOKEN")
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
